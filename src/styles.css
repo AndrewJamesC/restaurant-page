@@ -1,13 +1,12 @@
-body {
-	background-color: rgb(79, 0, 0);
-}
+
 
 #content {
 	background-color: white;
-	height: 90vh;
-	width: 50vw;
-	margin: auto;
+	height: 20vh;
+	width: fit-content;
+	margin: 20vh auto;
 	border-radius: 20px;
+	padding: 0 20px;
 }
 
 .nav a:hover {
