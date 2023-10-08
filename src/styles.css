@@ -9,3 +9,13 @@ body {
 	margin: auto;
 	border-radius: 20px;
 }
+
+.nav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+
+  .nav a.active {
+	background-color: #04AA6D;
+	color: white;
+  }
