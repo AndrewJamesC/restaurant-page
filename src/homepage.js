@@ -1,4 +1,5 @@
 import harryImg from "./assets/harry.png"
+import backgroundImg from "./assets/flatten.jpeg"
 
 export const createHome = () => {
     const divContent = document.querySelector("#content");
