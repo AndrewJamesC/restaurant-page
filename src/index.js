@@ -1,6 +1,8 @@
 import { createHome } from "./homepage";
+import { createMenu } from "./menu";
 import "./styles.css"
 
+const divContent = document.querySelector("#content");
 const navbar = document.createElement("div");
 navbar.classList.add("nav");
 const home = document.createElement("a");
@@ -23,8 +25,28 @@ navbar.appendChild(contact);
 
 
 
-
-
-
 createHome();
 
+home.addEventListener("click", () => {
+    while(divContent.firstChild) {
+        divContent.removeChild(divContent.lastChild);
+    }
+
+    createHome();
+})
+
+menu.addEventListener("click", () => {
+    while(divContent.firstChild) {
+        divContent.removeChild(divContent.lastChild);
+    }
+
+    createMenu();
+})
+
+contact.addEventListener("click", () => {
+    while(divContent.firstChild) {
+        divContent.removeChild(divContent.lastChild);
+    }
+
+    createContact();
+})
