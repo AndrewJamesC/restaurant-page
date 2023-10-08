@@ -2,6 +2,7 @@ import harryImg from "./assets/harry.png"
 
 export const createHome = () => {
     const divContent = document.querySelector("#content");
+    divContent.style.cssText = "width: 50vw;"
     const heading = document.createElement("h1");
     const homePara = document.createElement("p");
     const headerImg = new Image();

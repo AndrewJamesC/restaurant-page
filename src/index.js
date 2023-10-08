@@ -11,10 +11,10 @@ const menu = document.createElement("a");
 const contact = document.createElement("a");
 const header = document.querySelector("#header");
 
-navbar.style.cssText = "background-color: #333; overflow: hidden;"
-home.style.cssText = "float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;"
-menu.style.cssText = "float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;"
-contact.style.cssText = "float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;"
+navbar.style.cssText = "background-color: #333; overflow: hidden; padding: 20px 0; font-weight: bold;"
+home.style.cssText = "color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 35px;"
+menu.style.cssText = "margin-left: 10%; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 35px;"
+contact.style.cssText = "margin-left: 10%; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 35px;"
 
 home.innerText = "Home";
 menu.innerText = "Menu";

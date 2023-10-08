@@ -22,7 +22,7 @@ export const createContact = () => {
     contactIconContainer.style.cssText = "display: flex;"
     const phIcon = new Image();
     phIcon.src = phoneIconImg;
-    phIcon.style.cssText = "height: 3rem;"
+    phIcon.style.cssText = "height: 3rem; margin-top: 1.5rem; margin-left: 15%"
     const phNumber = document.createElement("p");
     phNumber.innerText = "566 - 1234567";
     const contactRightContainer = document.createElement("div");
@@ -33,21 +33,21 @@ export const createContact = () => {
     twitterContainer.style.cssText = "display: flex;"
     const twitterImg = new Image();
     twitterImg.src = twitIMg;
-    twitterImg.style.cssText = "height: 3rem;"
+    twitterImg.style.cssText = "height: 3rem; padding-top: 1.5rem; margin-left: 15%;"
     const twitterHandle  = document.createElement("p");
     twitterHandle.innerHTML = "<a href = 'https://twitter.com/'>Twitter</a>"
     const fbContainer = document.createElement("div");
     fbContainer.style.cssText = "display: flex;";
     const fbImg = new Image();
     fbImg.src = facebookImg;
-    fbImg.style.cssText = "height: 3rem;"
+    fbImg.style.cssText = "height: 3rem; padding-top: 1.5rem; margin-left: 15%"
     const facebookHandle  = document.createElement("p");
     facebookHandle.innerHTML = "<a href='https://www.facebook.com/'>Facebook</a>";
     const igContainer = document.createElement("div");
     igContainer.style.cssText = "display: flex;";
     const igImage = new Image();
     igImage.src = igImg;
-    igImage.style.cssText = "height: 3rem;";
+    igImage.style.cssText = "height: 3rem; padding-top: 1.5rem; margin-left: 15%";
     const igHandle = document.createElement("p");
     igHandle.innerHTML = "<a href='https://www.instagram.com/'>Instagram</a>";
 

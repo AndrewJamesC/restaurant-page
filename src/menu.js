@@ -12,7 +12,7 @@ export const createMenu = () => {
     const hotdogsHeading = document.createElement("h2");
     hotdogsHeading.innerText = "Hotdogs";
     const hotdogsContainer = document.createElement("div");
-    hotdogsContainer.style.cssText = "border: 2px solid black";
+    hotdogsContainer.style.cssText = "border: 2px solid black; padding-bottom: 50px;";
     const plainHotdog = document.createElement("h3");
     plainHotdog.innerText = "Original Hotdog";
     const plainHotdogDescription = document.createElement("p");
@@ -31,7 +31,7 @@ export const createMenu = () => {
     const drinksHeading = document.createElement("h2");
     drinksHeading.innerText = "Drinks";
     const drinksContainer = document.createElement("div");
-    drinksContainer.style.cssText = "border: 2px solid black;"
+    drinksContainer.style.cssText = "border: 2px solid black; padding-bottom: 50px;"
     const coke = document.createElement("h3");
     coke.innerText = "Coke";
     const cokeDescription = document.createElement("p");
