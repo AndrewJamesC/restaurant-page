@@ -9,7 +9,7 @@ export const createHome = () => {
     document.body.style.backgroundImage = "url('../src/assets/flatten.jpeg')";
 
     headerImg.src = harryImg;
-    headerImg.style.cssText = "height: auto; width: 10rem;"
+    headerImg.style.cssText = "height: auto; width: 12rem;"
     
 
     heading.textContent = "Harry's Hotdogs";
