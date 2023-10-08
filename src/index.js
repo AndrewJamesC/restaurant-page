@@ -1,5 +1,6 @@
 import { createHome } from "./homepage";
 import { createMenu } from "./menu";
+import { createContact } from "./contact";
 import "./styles.css"
 
 const divContent = document.querySelector("#content");
