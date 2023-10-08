@@ -1,4 +1,5 @@
 import phoneIconImg from "../src/assets/phone.png"
+import twitIMg from "./assets/twitter.png"
 
 export const createContact = () => {
     const divContentId = document.querySelector("#content");
@@ -22,6 +23,19 @@ export const createContact = () => {
     phIcon.style.cssText = "height: 3rem;"
     const phNumber = document.createElement("p");
     phNumber.innerText = "566 - 1234567";
+    const contactRightContainer = document.createElement("div");
+    contactRightContainer.style.cssText = "display: flex; flex-direction: column; border: 2px solid black; width: 50%;"
+    const rightHeader = document.createElement("h2");
+    rightHeader.textContent = "Social";
+    const twitterContainer = document.createElement("div");
+    twitterContainer.style.cssText = "display: flex;"
+    const twitterImg = new Image();
+    twitterImg.src = twitIMg;
+    twitterImg.style.cssText = "height: 3rem;"
+    const twitterHandle  = document.createElement("p");
+    twitterHandle.innerHTML = "<a href = 'https://twitter.com/'>Twitter</a>"
+    const fbContainer = document.createElement("div");
+    const igContainer = document.createElement("div");
 
    
     
@@ -38,6 +52,11 @@ export const createContact = () => {
     contactLeftContainer.appendChild(contactIconContainer);
     contactIconContainer.appendChild(phIcon);
     contactIconContainer.appendChild(phNumber);
-
-
+    contactInfoContainer.appendChild(contactRightContainer);
+    contactRightContainer.appendChild(rightHeader);
+    contactRightContainer.appendChild(twitterContainer);
+    contactRightContainer.appendChild(fbContainer);
+    contactRightContainer.appendChild(igContainer);
+    twitterContainer.appendChild(twitterImg);
+    twitterContainer.appendChild(twitterHandle);
 }
