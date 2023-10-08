@@ -1,5 +1,7 @@
 import phoneIconImg from "../src/assets/phone.png"
 import twitIMg from "./assets/twitter.png"
+import facebookImg from "./assets/facebook.png"
+import igImg from "./assets/instagram-logo-fill.svg"
 
 export const createContact = () => {
     const divContentId = document.querySelector("#content");
@@ -35,8 +37,21 @@ export const createContact = () => {
     const twitterHandle  = document.createElement("p");
     twitterHandle.innerHTML = "<a href = 'https://twitter.com/'>Twitter</a>"
     const fbContainer = document.createElement("div");
+    fbContainer.style.cssText = "display: flex;";
+    const fbImg = new Image();
+    fbImg.src = facebookImg;
+    fbImg.style.cssText = "height: 3rem;"
+    const facebookHandle  = document.createElement("p");
+    facebookHandle.innerHTML = "<a href='https://www.facebook.com/'>Facebook</a>";
     const igContainer = document.createElement("div");
+    igContainer.style.cssText = "display: flex;";
+    const igImage = new Image();
+    igImage.src = igImg;
+    igImage.style.cssText = "height: 3rem;";
+    const igHandle = document.createElement("p");
+    igHandle.innerHTML = "<a href='https://www.instagram.com/'>Instagram</a>";
 
+    
    
     
     
@@ -55,8 +70,12 @@ export const createContact = () => {
     contactInfoContainer.appendChild(contactRightContainer);
     contactRightContainer.appendChild(rightHeader);
     contactRightContainer.appendChild(twitterContainer);
-    contactRightContainer.appendChild(fbContainer);
-    contactRightContainer.appendChild(igContainer);
     twitterContainer.appendChild(twitterImg);
     twitterContainer.appendChild(twitterHandle);
+    contactRightContainer.appendChild(fbContainer);
+    fbContainer.appendChild(fbImg);
+    fbContainer.appendChild(facebookHandle);
+    contactRightContainer.appendChild(igContainer);
+    igContainer.appendChild(igImage);
+    igContainer.appendChild(igHandle);
 }
